@@ -1,29 +1,4 @@
 
-
-// pipeline {
-//     agent any
-
-//     stages {
-//         stage('List Installed Software') {
-//             steps {
-//                 sh '''
-//                     echo "Listing installed software..."
-//                     if [ -x "$(command -v dpkg)" ]; then
-//                         dpkg --get-selections
-//                     elif [ -x "$(command -v rpm)" ]; then
-//                         rpm -qa
-//                     else
-//                         echo "Package manager not found. Try listing from /usr/bin or /opt."
-//                         ls /usr/bin
-//                     fi
-//                 '''
-//             }
-//         }
-//     }
-// }
-
-
-
 pipeline {
   agent any
 
