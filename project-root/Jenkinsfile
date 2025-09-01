@@ -16,7 +16,9 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git branch: 'main', url: 'https://github.com/Danuu2345/Terraform-Modules/tree/main/project-root.git'
+          git branch: 'main',
+          credentialsId: 'Terraform-Module',
+          url: 'https://github.com/Danuu2345/Terraform-Modules/tree/main/project-root.git'
       }
     }
 
