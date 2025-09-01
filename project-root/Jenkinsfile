@@ -18,7 +18,7 @@ pipeline {
       steps {
           git branch: 'main',
           credentialsId: 'Terraform-Module',
-          url: 'https://github.com/Danuu2345/Terraform-Modules/tree/main/project-root.git'
+          url: 'https://github.com/Danuu2345/Terraform-Modules.git'
       }
     }
 
